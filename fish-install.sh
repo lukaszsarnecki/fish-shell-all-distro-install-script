@@ -2,12 +2,17 @@
 
 while true; do
   echo "Wybierz dystrybucje jaka posiadasz"
-  read -p "1. Debian, Ubuntu, Mintn\2. RedHat, Fedoran\ 3. Arch, Manjaro" choose_distro
+  read -p "1. Debian, Ubuntu, Mintn\2. RedHat, Fedoran\ 3. Arch, Manjaro\n 4. OpenSusen\ N: Nie chcę instalować Fish" choose_distro
   case $choose_distro in
-    [yY] ) chsh -s /usr/bin/fish; echo "Powloka zostala zmieniona";
+    [1] ) sudo apt install fish;
       break;;
+    [2] ) sudo dnf install fish;
+      break;;
+    [3] ) sudo pacman -S fish;
+      break;;
+    [4] ) sudo zypper in fish;
     [nN] ) exit;;
-    * ) echo "Wybierz Y lub N";;
+    * ) echo "Wybierz 1, 2, 3, 4 lub N";;
 esac
 done
 

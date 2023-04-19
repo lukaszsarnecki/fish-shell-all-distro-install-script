@@ -19,9 +19,6 @@ while true; do
 esac
 done
 
-#instalacja powloki fish
-  sudo apt install fish
-
 sleep 2
 
 #edycja pliku .bashrc 

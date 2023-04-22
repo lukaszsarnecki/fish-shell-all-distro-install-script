@@ -29,7 +29,7 @@ sleep 2
 
 #ukrycie wiadomości powitalnej
 
-  echo -e "\nset -U fish_greeting" >> ~/.config/fish/config.fish
+fish; echo -e "\nset -U fish_greeting" >> ~/.config/fish/config.fish
   
 #ustawienie fish jako domyślny shell
 

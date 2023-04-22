@@ -23,13 +23,13 @@ sleep 2
 
 #edycja pliku .bashrc 
 
-  echo -e "#fish\nexec fish" >> ~/.bashrc
+  fish; echo -e "#fish\nexec fish" >> ~/.bashrc
 
 sleep 2
 
 #ukrycie wiadomości powitalnej
 
-fish; echo -e "\nset -U fish_greeting" >> ~/.config/fish/config.fish
+echo -e "\nset -U fish_greeting" >> ~/.config/fish/config.fish
   
 #ustawienie fish jako domyślny shell
 

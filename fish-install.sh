@@ -21,9 +21,13 @@ done
 
 sleep 2
 
+fish
+
+sleep 2
+
 #edycja pliku .bashrc 
 
-  fish; echo -e "#fish\nexec fish" >> ~/.bashrc
+echo -e "#fish\nexec fish" >> ~/.bashrc
 
 sleep 2
 

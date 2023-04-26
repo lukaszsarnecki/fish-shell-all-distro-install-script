@@ -6,4 +6,4 @@
 
 2. Zmiana domyślnego shella
 
-    Przy pytaniu o ustawienie domyślnej powłoki, po wyborze n/N, do pliku .bashrc zostanie dodane polcenie exec fish.
+    Przy pytaniu o ustawienie domyślnej powłoki, po wyborze n/N, do pliku .bashrc zostanie dodane polcenie exec fish. Spowoduje to, że fish będzie dzialac w wersji interakwynej.

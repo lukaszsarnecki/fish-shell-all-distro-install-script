@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 #wybor dystrybucji
 while true; do
@@ -19,36 +19,38 @@ while true; do
 esac
 done
 
-sleep 2
-
-fish
-
-sleep 2
-
-#edycja pliku .bashrc 
-
-echo -e "#fish\nexec fish" >> ~/.bashrc
-
-sleep 2
-
-#ukrycie wiadomości powitalnej
-
-echo -e "\nset -U fish_greeting" >> ~/.config/fish/config.fish
-  
 #ustawienie fish jako domyślny shell
 
+sleep 2
+
 while true; do
-  read -p "Czy chcesz ustawic powloke fish jako domyslna? (y/n) " fish_as_default
-  case $fish_as_default in
-    [yY] ) chsh -s /usr/bin/fish; echo "Powloka zostala zmieniona";
+  read -p "Czy chcesz zmienic domyślną powloke bash na fish? (y/n) " fish_as_default
+ case $fish_as_default in
+   [yY] ) chsh -s /usr/bin/fish; echo "Powloka zostala zmieniona"; 
       break;;
-    [nN] ) exit;;
+    [nN] ) echo -e "#fish\nexec fish" >> ~/.bashrc; #edycja pliku .bashrc 
+      break;;
     * ) echo "Wybierz Y lub N";;
 esac
 done
 
 sleep 2
 
+exec fish << EOF
+
+sleep 2
+
+mkdir test123
+
+#ukrycie wiadomości powitalnej fish
+
+echo -e "\nset -U fish_greeting" >> ~/.config/fish/config.fish
+
+
+sleep 2
+
   echo " Gotowe. Uruchom ponownie terminal"
+
+EOF
 
 exit 0

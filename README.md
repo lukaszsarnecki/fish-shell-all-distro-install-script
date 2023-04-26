@@ -2,7 +2,7 @@
 
 1. Nadanie uprawnień
 
-    Po pobraniu ustawć permisje execute: chmod +x fish-install.sh
+    Po pobraniu ustawć permisje execute: chmod +x install-fish.sh
 
 2. Zmiana domyślnego shella
 

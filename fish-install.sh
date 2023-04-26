@@ -40,8 +40,6 @@ exec fish << EOF
 
 sleep 2
 
-mkdir test123
-
 #ukrycie wiadomości powitalnej fish
 
 echo -e "\nset -U fish_greeting" >> ~/.config/fish/config.fish
@@ -49,7 +47,7 @@ echo -e "\nset -U fish_greeting" >> ~/.config/fish/config.fish
 
 sleep 2
 
-  echo " Gotowe. Uruchom ponownie terminal"
+echo " Gotowe. Uruchom ponownie terminal"
 
 EOF
 
